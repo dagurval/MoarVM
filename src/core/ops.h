@@ -203,7 +203,7 @@
 #define MVM_OP_split 199
 #define MVM_OP_join 200
 #define MVM_OP_getcpbyname 201
-#define MVM_OP_indexat_scb 202
+#define MVM_OP_indexat 202
 #define MVM_OP_unipropcode 203
 #define MVM_OP_unipvalcode 204
 #define MVM_OP_hasuniprop 205
@@ -504,5 +504,6 @@
 #define MVM_OP_settypehllrole 500
 #define MVM_OP_usecompileehllconfig 501
 #define MVM_OP_usecompilerhllconfig 502
+#define MVM_OP_indexnat 503
 
 MVMOpInfo * MVM_op_get_op(unsigned short op);

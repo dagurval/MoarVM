@@ -505,6 +505,7 @@ BEGIN {
     1201,
     1203,
     1205,
+    1205,
     1205);
     MAST::Ops.WHO<@counts> := nqp::list_i(0,
     1,
@@ -1008,7 +1009,8 @@ BEGIN {
     2,
     2,
     0,
-    0);
+    0,
+    4);
     MAST::Ops.WHO<@values> := nqp::list_i(72,
     33,
     72,
@@ -2213,7 +2215,11 @@ BEGIN {
     65,
     57,
     65,
-    33);
+    33,
+    57,
+    33,
+    56,
+    72);
     MAST::Ops.WHO<%codes> := nqp::hash('no_op', 0,
     'goto', 1,
     'if_i', 2,
@@ -2416,7 +2422,7 @@ BEGIN {
     'split', 199,
     'join', 200,
     'getcpbyname', 201,
-    'indexat_scb', 202,
+    'indexat', 202,
     'unipropcode', 203,
     'unipvalcode', 204,
     'hasuniprop', 205,
@@ -2716,7 +2722,8 @@ BEGIN {
     'settypehll', 499,
     'settypehllrole', 500,
     'usecompileehllconfig', 501,
-    'usecompilerhllconfig', 502);
+    'usecompilerhllconfig', 502,
+    'indexnat', 503);
     MAST::Ops.WHO<@names> := nqp::list('no_op',
     'goto',
     'if_i',
@@ -2919,7 +2926,7 @@ BEGIN {
     'split',
     'join',
     'getcpbyname',
-    'indexat_scb',
+    'indexat',
     'unipropcode',
     'unipvalcode',
     'hasuniprop',
@@ -3219,5 +3226,6 @@ BEGIN {
     'settypehll',
     'settypehllrole',
     'usecompileehllconfig',
-    'usecompilerhllconfig');
+    'usecompilerhllconfig',
+    'indexnat');
 }
